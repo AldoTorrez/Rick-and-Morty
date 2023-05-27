@@ -1,0 +1,245 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300&family=PT+Sans&display=swap');
+
+.search{
+    background-color: rgb(15, 15, 15);
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0px 0px 5px 5px;
+    box-shadow: 1px 1px 5px black;
+    position: fixed;
+    z-index: 100;
+    border-bottom: 1px solid rgb(47, 213, 255);
+}
+.search button{
+    background-color: black;
+    border-radius: 3px;
+    border: 0;
+    height: 23px;
+    margin-left: 2px;
+    color: rgb(212, 207, 207);
+    border: 1px solid rgb(0, 225, 255);
+}
+.search button:hover{
+        color: rgb(47, 224, 255);
+        cursor: pointer;
+}
+
+.input{
+    background-color: whitesmoke;
+    width: 300px;
+    height: 20px;
+    border-radius: 2px;
+    outline: none;
+    border: 0;
+    border-bottom: 1px solid black;
+}
+
+.cards{
+    background-color: whitesmoke;
+    position: relative;
+    top: 85px;
+    padding: 60px;
+    width: 1000px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+    z-index: 10;
+}
+.container{
+    margin: auto;
+    background-color: white;
+    width: 200px;
+    height: 300px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px black;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.container button{
+    background-color: white;
+    position: absolute;
+    right: 1px;
+    top: 2px;
+    border: 0;
+    font-size: 15px;
+    cursor: pointer;
+    font-weight: 700;
+}
+.container h2{
+    text-align: center;
+    font-family: sans-serif;
+}
+.container div{
+    width: 200px;
+    display: flex;
+    justify-content: space-around;
+}
+.container img{
+    width: 170px;
+}
+
+.about{
+    background-color: black;
+    color: white;
+    width: 1150px;
+    height: 450px;
+    position: absolute;
+    top: 130px;
+    left: 50px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rgb(47, 255, 255);
+}
+.about img{
+    width: 350px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px black;
+}
+
+.detail{
+    background-color: whitesmoke;
+    position: absolute;
+    top: 130px;
+    left: 300px;
+    width: 800px;
+    border-radius: 5px;
+    border: 0.5px solid black;
+    display: flex;
+}
+.detail button{
+    position: absolute;
+    left: -150px;
+    font-size: 20px;
+    cursor: pointer;
+    background-color: black;
+    color: whitesmoke;
+    border: 0;
+    border-radius: 5px;
+    font-size: 20px;
+    padding: 10px;
+}
+.detail button:hover{
+    color: aqua;
+}
+.detail div{
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 3px 3px 8px black;
+    margin: 10px;
+    width: 600px;
+    position: relative;
+    padding-left: 40px;
+}
+.detail h1{
+    text-align: center;
+}
+.detail a{
+    color: blue;
+    text-decoration: none;
+}
+.detail a:hover{
+    cursor: pointer;
+    color: rgb(61, 95, 187);
+}
+
+.error{
+    background-color: white;
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    z-index: 1000;
+}
+.font_form{
+    background-color: black;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.form{
+    background-color: rgb(26, 25, 25);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 250px;
+    height: 350px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 10px black;
+    color: white;
+    border: 1px solid rgb(47, 241, 255);
+}
+.form h3{
+    font-weight: bold;
+    font-size: 30px;
+    text-shadow: 1px 1px 3px black;
+    color: white;
+}
+.form label{
+    font-size: 15px;
+    font-family: 'Kanit', sans-serif;
+    font-weight: bold;
+    color: white;
+}
+.form input{
+    outline: none;
+    border: 0;
+    box-shadow: inset -1px -1px 3px black;
+    border-radius: 3px;
+    padding: 3px;
+    border: 1px solid rgb(0, 153, 255);
+}
+.form button{
+    border: 0;
+    font-size: 15px;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: black;
+    color: white;
+    width: 100px;
+    border: 1px solid rgb(0, 255, 170);
+}
+.form button:hover{
+    cursor: pointer;
+    color: aqua;
+}
+.form p{
+    position: relative;
+    top: -5px;
+    font-size: 10px;
+    left: 10px;
+    color: red;
+    font-family: 'Kanit', sans-serif;
+}
+
+.render{
+    display: flex;
+    left: 0px;
+}
+.favorites{
+    background-color: whitesmoke;
+    position: relative;
+    top: 85px;
+    padding: 60px;
+    width: 1000px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+    z-index: 10;
+}
