@@ -6,8 +6,8 @@ export function Favorites({myFavorites}){
     return(
         <div className={styles.favorites}>
             {
-                myFavorites.map((element)=>{
-                    return(
+            myFavorites.map((element)=>{
+                return(
                     <Card data={element} key={element.id} onClose={()=>null}/>
                     )
                 })

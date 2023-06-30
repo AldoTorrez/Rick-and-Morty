@@ -12,29 +12,25 @@ export function Card({data, onClose, myFavorites, addCharacter, deleteCharacter}
   const handleFavorite = ()=>{
     isFav ? deleteCharacter(data.id):addCharacter(data);
     setIsFav(!isFav); 
-  }
+  };
 
   useEffect(() => {
     myFavorites.forEach((fav) => {
-       if (fav.id === data.id) {
-          setIsFav(true);
-       }
+       if (fav.id === data.id) setIsFav(true);
     });
-  }, [myFavorites]);
+  }, [myFavorites, data]);
 
     return(
       <div className={styles.container}>
-            <button onClick={handleFavorite} className={styles.render}>{isFav?'❤️':'🤍'}</button>
-            <button onClick={()=>{onClose(data.id)}}>X</button>
-            <h2>{data.name}</h2>
-            <NavLink to={`/detail/${data.id}`}>
-            <img src={data.image} alt={data.name} />
-            </NavLink>
-            <div>
+          <button onClick={handleFavorite} className={styles.render}>{isFav?'❤️':'🤍'}</button>
+          <button onClick={()=>{onClose(data.id)}}>X</button>
+          <h2>{data.name}</h2>
+          <NavLink to={`/detail/${data.id}`}> <img src={data.image} alt={data.name} /> </NavLink>
+          <div>
               <h3>{data.species}</h3>
               <h3>{data.gender}</h3>
-            </div>
-        </div>
+          </div>
+      </div>
     )
 }
 

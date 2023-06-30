@@ -1,18 +1,18 @@
 // res.setHeader('Access-Control-Allow-Origin', '*');
+const {Router} = require('express');
 const {getCharById} = require('../Controllers/getCharById.js');
 const {getCharDetail} = require('../Controllers/getCharDetail.js');
-const express = require('express');
-const cors = require('cors');
-const app = express();
+const postUser = require('../Controllers/postUser.js');
+const login = require('../Controllers/login.js');
+const postFav = require('../Controllers/postFav.js');
+const deleteFav = require('../Controllers/deleteFav.js');
+const router = Router();
 
-app.use(cors());
+router.get('/rickandmorty/character/:id',getCharById);
+router.get('/rickandmorty/detail/:id', getCharDetail);
+router.get('/logins', login)
+router.post('/login', postUser);
+router.post('/fav', postFav);
+router.delete('/fav/:id', deleteFav);
 
-app.get('/rickandmorty/character/:id',(req, res)=>{
-    getCharById(req, res);
-})
-
-app.get('/rickandmorty/detail/:id', (req, res)=>{
-    getCharDetail(req, res);
-})
-
-app.listen(3001,()=>{console.log('Listening on port: 3001')})
+module.exports = router;

@@ -165,7 +165,9 @@
     z-index: 1000;
 }
 .font_form{
-    background-color: black;
+    background-image: url('https://w0.peakpx.com/wallpaper/800/811/HD-wallpaper-rick-and-morty-portal.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100vh;
     width: 100%;
     height: 100vh;
     display: flex;
@@ -180,51 +182,54 @@
     width: 250px;
     height: 350px;
     border-radius: 10px;
-    box-shadow: 3px 3px 10px black;
+    box-shadow: 5px 5px 10px black;
     color: white;
     border: 1px solid rgb(47, 241, 255);
 }
 .form h3{
-    font-weight: bold;
+    background-image: linear-gradient(to right, rgb(8, 187, 103), rgb(0, 255, 255));
+    -webkit-background-clip: text;
+    background-clip: text;
     font-size: 30px;
-    text-shadow: 1px 1px 3px black;
-    color: white;
+    color: transparent;
 }
 .form label{
     font-size: 15px;
     font-family: 'Kanit', sans-serif;
-    font-weight: bold;
     color: white;
 }
 .form input{
+    background-color: rgb(0, 0, 0, 0.3);
     outline: none;
-    border: 0;
-    box-shadow: inset -1px -1px 3px black;
-    border-radius: 3px;
     padding: 3px;
-    border: 1px solid rgb(0, 153, 255);
+    color: rgb(167, 173, 170);
+    border-radius: 5px;
+    border: 1px solid rgb(46, 255, 255);
 }
 .form button{
+    background-image: linear-gradient(to right, rgb(4, 117, 79), rgb(9, 206, 140));
     border: 0;
     font-size: 15px;
-    padding: 10px;
     border-radius: 5px;
-    background-color: black;
-    color: white;
+    color: whitesmoke;
     width: 100px;
-    border: 1px solid rgb(0, 255, 170);
+    height: 30px;
+    position: relative;
+    top: -30px;
 }
 .form button:hover{
     cursor: pointer;
-    color: aqua;
+    color: rgb(163, 167, 167);
 }
 .form p{
-    position: relative;
-    top: -5px;
     font-size: 10px;
-    left: 10px;
     color: red;
-    font-family: 'Kanit', sans-serif;
+    font-family: sans-serif;
+}
+.form h5{
+    position: relative;
+    color: rgb(85, 255, 241);
+    top: -20px;
 }
 
 .render{
@@ -242,4 +247,56 @@
     grid-template-columns: repeat(4, 1fr);
     grid-gap: 10px;
     z-index: 10;
+}
+
+.sesion{
+    background-color: rgb(26, 25, 25);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 300px;
+    height: 200px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px black;
+    color: white;
+    border: 1px solid rgb(47, 241, 255);
+}
+
+.sesion h3{
+    background-image: linear-gradient(to right, rgb(8, 187, 103), rgb(0, 255, 255));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+.sesion label{
+    position: relative;
+    top: -10px;
+    font-size: 15px;
+    font-family: 'Kanit', sans-serif;
+    color: white;
+}
+.sesion input{
+    position: relative;
+    top: -10px;
+    background-color: rgb(0, 0, 0, 0.3);
+    outline: none;
+    padding: 3px;
+    color: rgb(167, 173, 170);
+    border-radius: 5px;
+    border: 1px solid rgb(46, 255, 255);
+}
+.sesion button{
+    position: relative;
+    top: -10px;
+    background-image: linear-gradient(to right, rgb(4, 117, 79), rgb(9, 206, 140));
+    border: 0;
+    font-size: 15px;
+    border-radius: 5px;
+    color: whitesmoke;
+    width: 130px;
+    height: 30px;
+}
+.sesion button:hover{
+    cursor: pointer;
+    color: rgb(163, 167, 167)
 }
